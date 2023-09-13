@@ -9,5 +9,29 @@ html(lang="ru")
         link(rel="icon" href="images/favicon.ico" type="image/x-icon")
         link(rel="shortcut icon" href="images/favicon.ico" type="image/x-icon")
         link(rel="stylesheet" href="css/style.min.css")
-    body
-        
+    body 
+        .wrapper 
+
+            header.header#home(style="background-image: url(images/header-bg.jpg);")
+                .container
+
+                    .header__top
+                        nav.menu 
+                            a.logo(href="#home")
+                                img.logo__img(src="images/icons/logo.svg" width="138" height="62" alt="логотип")
+                            button.menu__btn(type="button")
+                                span 
+                            ul.menu__list
+                                li.menu__item: a.menu__link(href="#booking") Бронирование
+                                li.menu__item: a.menu__link(href="#popular") Туры
+                                li.menu__item: a.menu__link(href="#about") О Японии
+                                li.menu__item: a.menu__link(href="#tour") О нас
+                            a.header__phone(href="tel:8-999-615-19-09")
+                                img(src="images/icons/phone.svg" width="34" height="32" alt="телефон")
+
+                    .header__content
+                        h1.header__title Туры по Японии
+                        .header__box 
+                            .header__desck
+                                p Туры по самым экзотическим местам. Поехали с нами за новыми впечатлениями!
+                            a.request(href="#booking") Оставить заявку
