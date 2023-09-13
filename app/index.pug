@@ -47,4 +47,16 @@ html(lang="ru")
                                     img.direction__img(src=item.src width="256" height="110" alt=item.text)
                                     .direction__text= item.text
 
+                section.travel-info(style="background-image: url(images/travel__info-bg.jpg);")
+                    .container
+
+                        h2.travel-info__title.title Основные направления
+
+                        ul.travel-info__box 
+                            each item in travelInfoData 
+                                li.travel-info__item 
+                                    img.travel-info__img(src=item.src width="85" height="85" alt=item.alt)
+                                    .travel-info__text 
+                                        p=item.text                    
+
         script(src="js/main.min.js")                                            

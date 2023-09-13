@@ -132,3 +132,32 @@
     }
   
   }
+
+  .travel-info {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 20px 0 60px;
+  
+    &__title {
+      color: $silver;
+      margin-bottom: 50px;
+    }
+  
+    &__box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 54px 67px;
+    }
+  
+    &__img {
+      margin-bottom: 15px;
+    }
+  
+    &__text {
+      color: $silver;
+      font-size: 16px;
+      line-height: 1.3;
+    }
+  
+  }
