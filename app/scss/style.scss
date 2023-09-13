@@ -112,3 +112,23 @@
     }
   
   }
+
+  .direction {
+    margin: 100px 0;
+  
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 32px;
+    }
+  
+    &__img {
+      height: auto;
+    }
+  
+    &__text {
+      font-size: 16px;
+      padding: 10px 0 14px;
+    }
+  
+  }

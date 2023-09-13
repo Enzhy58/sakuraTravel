@@ -35,3 +35,16 @@ html(lang="ru")
                             .header__desck
                                 p Туры по самым экзотическим местам. Поехали с нами за новыми впечатлениями!
                             a.request(href="#booking") Оставить заявку
+
+            main.main
+
+                section.direction
+                    h2.sr-only Направления
+                    .container
+                        ul.direction__inner 
+                            each item in directionData 
+                                li.direction__item 
+                                    img.direction__img(src=item.src width="256" height="110" alt=item.text)
+                                    .direction__text= item.text
+
+        script(src="js/main.min.js")                                            
