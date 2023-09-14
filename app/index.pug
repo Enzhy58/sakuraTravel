@@ -57,6 +57,16 @@ html(lang="ru")
                                 li.travel-info__item 
                                     img.travel-info__img(src=item.src width="85" height="85" alt=item.alt)
                                     .travel-info__text 
-                                        p=item.text                    
+                                        p=item.text
+
+                section.popular#popular
+                    .container
+                        h2.popular__title.title Популярные предложения
+                        ul.popular__list 
+                            each item in popularData 
+                                li.popular__item 
+                                    .popular__wrapper(style=item.style)
+                                        h3.popular__wrapper-title=item.title 
+                                        p.popular__price=item.price                                            
 
         script(src="js/main.min.js")                                            
