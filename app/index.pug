@@ -67,6 +67,18 @@ html(lang="ru")
                                 li.popular__item 
                                     .popular__wrapper(style=item.style)
                                         h3.popular__wrapper-title=item.title 
-                                        p.popular__price=item.price                                            
+                                        p.popular__price=item.price
+
+                section.promo
+                    .container
+                        .promo__inner
+                            h2.promo__title.title Скидка 10% на все туры
+                            .timer
+                                ul.timer__items
+                                    li.timer__item.timer__days 00
+                                    li.timer__item.timer__hours 00
+                                    li.timer__item.timer__minutes 00
+                                    li.timer__item.timer__seconds 00
+                            a.request.promo__request(href="#booking") Оставить заявку                                                                   
 
         script(src="js/main.min.js")                                            
