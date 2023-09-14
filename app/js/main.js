@@ -13,6 +13,35 @@ $(function () {
       $('.header__top').addClass('header__top--scroll');
     }
   });
+  $('.menu a, .request, .footer__logo').on('click', function (e) {
+    e.preventDefault();
+    var id = $(this).attr('href'), top = $(id).offset().top;
+    $('body, html').animate({ scrollTop: top }, 1500);
+  });
+
+  $('.menu__btn, .menu__link').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+    $('.wrapper').toggleClass('wrapper__fixed');
+  });
+
+
+  $('.popular__list').slick({
+    dots: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 2048,
+        settings: "unslick"
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 
 });
 
