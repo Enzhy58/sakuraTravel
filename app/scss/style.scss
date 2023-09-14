@@ -432,3 +432,115 @@
   }
 
 }
+
+.booking {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 75px 0;
+
+  &__title {
+    margin-bottom: 43px;
+    -webkit-text-stroke: 1px $silver;
+    color: $silver;
+    text-shadow:
+      2px 2px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+
+  &__form {
+    max-width: 830px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    width: 256px;
+    height: 44px;
+    border: 1px solid $gray;
+    padding: 11px 14px 12px;
+    margin-bottom: 28px;
+    background-color: $silver;
+  }
+
+  &__input::placeholder,
+  &__area::placeholder {
+    font-size: 16px;
+    color: rgba(108, 107, 107, 0.5);
+    transition: color 0.3s;
+  }
+
+  &__input:hover::placeholder,
+  &__area:hover::placeholder {
+    color: #6C6B6B;
+  }
+
+  &__area {
+    width: 100%;
+    padding: 14px;
+    height: 112px;
+    border: 1px solid $gray;
+    background-color: $silver;
+    resize: vertical;
+    margin-bottom: 67px;
+  }
+
+  &__input,
+  &__area {
+    &:focus {
+      box-shadow: 0 0 0 3px rgba($dark, 0.6);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label {
+    font-size: 16px;
+    color: $silver;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+  }
+
+  &__checkbox {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+  }
+
+  &__checkbox-style {
+    width: 26px;
+    height: 26px;
+    border: 3.5px solid $gray;
+    border-radius: 2px;
+    position: absolute;
+    margin-left: -45px;
+    cursor: pointer;
+  }
+
+  &__checkbox:checked+&__checkbox-style::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: $silver;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}

@@ -126,6 +126,21 @@ html(lang="ru")
                             li.tour__info-item #[span.tour__info-numbers 50] гостиниц без посредников
                             li.tour__info-item #[span.tour__info-numbers 25+] собственных туров
                             li.tour__info-item #[span.tour__info-numbers 372800] кв. км – площадь наших путешествий
-                            li.tour__info-item #[span.tour__info-numbers 5000+] довольных туристов                                            
+                            li.tour__info-item #[span.tour__info-numbers 5000+] довольных туристов
+
+                section.booking#booking(style="background-image: url(images/booking.jpg);")
+                    .container 
+                        h2.booking__title.title Забронируйте отдых в Японии
+                        form.booking__form(action="#")
+                            .booking__top
+                                input.booking__input(type="text" placeholder="Ваше имя" name="name" required)
+                                input.booking__input(type="tel" placeholder="Телефон" name="tel" required)
+                                input.booking__input(type="email" placeholder="E-mail" name="email" required)
+                                textarea.booking__area(placeholder="Комментарий" name="message" required)
+                            .booking__bottom
+                                button.request.booking__request(type="submit") Отправить заявку
+                                label.booking__label Согласие на обработку персональных данных
+                                    input.booking__checkbox(type="checkbox")
+                                    span.booking__checkbox-style                                                        
 
         script(src="js/main.min.js")                                            
