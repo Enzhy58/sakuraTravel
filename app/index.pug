@@ -94,5 +94,23 @@ html(lang="ru")
                                 .about__text 
                                     p Туры в Японию - это всегда увлекательное путешествие в другой мир где сочетаются современные технологии с умело сохранённой древней культурой и историей. Разобраться во всем многообразии Японии не просто и специалистам, но все приходит с опытом… Японский туропрератор Sakura travel подготовил для туристов из России, Украины, Израиля, США и других стран групповые и пакетные туры, в которых хорошо сбалансированы цена и качество. 
                             a.about__video(data-fancybox href="https://youtu.be/Gb0TQ7VeApY?si=h55VKYlTsOyo6171" style="background-image: url(images/video-bg.jpg);")
-                            
+
+                section.gallery 
+                    .container 
+                        .gallery__top
+                            h2.gallery__title.title Фотогалерея
+                        .gallery__box
+                            .gallery__items
+                                ul.gallery__list 
+                                    each item in galleryData1 
+                                        li.gallery__item 
+                                            a.gallery__link(href=item.href data-fancybox="images" data-width="2048" data-height="1365")
+                                                img.gallery__img(src=item.src width="352" height="256" alt=item.alt)
+                            .gallery__items
+                                ul.gallery__list 
+                                    each item in galleryData2 
+                                        li.gallery__item 
+                                            a.gallery__link(href=item.href data-fancybox="images" data-width="2048" data-height="1365")
+                                                img.gallery__img(src=item.src width="352" height="256" alt=item.alt)            
+
         script(src="js/main.min.js")                                            
