@@ -13,6 +13,7 @@ $(function () {
       $('.header__top').addClass('header__top--scroll');
     }
   });
+
   $('.menu a, .request, .footer__logo').on('click', function (e) {
     e.preventDefault();
     var id = $(this).attr('href'), top = $(id).offset().top;
@@ -23,7 +24,6 @@ $(function () {
     $('.menu__list').toggleClass('menu__list--active');
     $('.wrapper').toggleClass('wrapper__fixed');
   });
-
 
   $('.popular__list').slick({
     dots: true,
@@ -44,6 +44,7 @@ $(function () {
   });
 
 });
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const deadline = new Date(2023, 10, 22);
